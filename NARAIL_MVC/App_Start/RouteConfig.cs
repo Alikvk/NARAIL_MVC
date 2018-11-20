@@ -28,6 +28,11 @@ namespace NARAIL_MVC
                  defaults: new { controller = "Home", action = "Contact" }
              );
             routes.MapRoute(
+              name: "Project",
+              url: "projelerimiz",
+              defaults: new { controller = "Home", action = "Project" }
+          );
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
